@@ -1,0 +1,72 @@
+# Workspace Cargo di Shadow — struttura definita in §8 del blueprint.
+#
+# Crate presenti (Fase 0):
+#   shadow-core        motore: modello dati, normalizzazione, classificazione
+#   shadow-collectors  formati di log -> `ObservedRequest`  (l'osservato)
+#   shadow-spec        OpenAPI/Swagger -> `DeclaredEndpoint` (il dichiarato)
+#   shadow-history     lo storico persistente su SQLite (Fase 5)
+#   shadow-compliance  il report d'audit esportabile (Fase 5)
+#   shadow-daemon      l'esecuzione continua nel tempo (Fase 5)
+#   shadow-view        dallo storico alla vista di supervisione (Fase 5)
+#   shadow-serve       la SOLA cosa del progetto che apre un socket (Fase 5)
+#   shadow-cli         entrypoint / orchestratore (binario `shadow`)
+#
+# Tutti i crate previsti da §8 esistono.
+
+[workspace]
+resolver = "3"
+members = [
+    "shadow-core",
+    "shadow-collectors",
+    "shadow-spec",
+    "shadow-history",
+    "shadow-compliance",
+    "shadow-daemon",
+    "shadow-view",
+    "shadow-serve",
+    "shadow-cli",
+]
+
+# Metadati condivisi da tutti i crate del workspace.
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.85"
+license-file = "LICENSE"
+publish = false
+
+# Dipendenze interne (§8). Archi ammessi:
+#   shadow-cli        -> shadow-collectors, shadow-spec, shadow-history, shadow-core
+#   shadow-collectors -> shadow-core
+#   shadow-spec       -> shadow-core
+#   shadow-history    -> shadow-core
+# `shadow-core` non dipende da nessuno degli altri: è una libreria pura.
+# Nessun arco inverso, mai: il core non conosce né i collector né la CLI.
+[workspace.dependencies]
+shadow-core = { path = "shadow-core" }
+shadow-collectors = { path = "shadow-collectors" }
+shadow-spec = { path = "shadow-spec" }
+shadow-history = { path = "shadow-history" }
+shadow-compliance = { path = "shadow-compliance" }
+shadow-daemon = { path = "shadow-daemon" }
+shadow-view = { path = "shadow-view" }
+shadow-serve = { path = "shadow-serve" }
+# chrono: qui senza la feature "clock". Il timestamp del `RunManifest` e' l'unico
+# valore che puo' variare fra due run (§P4) e lo produce `shadow-cli`, che
+# aggiunge "clock" alle proprie dipendenze. Attenzione all'onesta' di questa
+# affermazione: l'unificazione delle feature di cargo rende `Utc::now()`
+# disponibile a tutto il grafo, quindi che il core non legga l'orologio e' una
+# disciplina verificata da un test (`shadow-core` non nomina mai `now`), non un
+# vincolo imposto dal compilatore.
+chrono = { version = "0.4", default-features = false, features = ["std"] }
+# sha2: digest SHA-256 degli input, deciso in §6 e calcolato in Fase 1 nella
+# stessa passata della lettura. RustCrypto, nessuna dipendenza di rete.
+sha2 = { version = "0.10", default-features = false }
+# serde_json: lettura della specifica dichiarata. Solo JSON per ora — vedi la
+# nota su YAML in shadow-spec, che e' una decisione aperta e non inventata.
+serde_json = { version = "1", default-features = false, features = ["std"] }
+# serde_norway: fork mantenuto di serde_yaml (archiviato), API gia' nota. Legge
+# YAML, che e' il formato in cui la maggior parte degli OpenAPI reali e' scritta.
+# E' un parser che mangia input non fidato: i limiti sono in shadow-spec.
+serde_norway = { version = "0.9", default-features = false }
+clap = { version = "4", default-features = false, features = ["std", "help", "usage", "error-context", "suggestions", "color", "string"] }

@@ -1,0 +1,5 @@
+10.0.0.1 - - [10/Oct/2023:13:55:36 +0000] "GET /api/users/1?page=2 HTTP/1.1" 200 2326 "https://example.com/" "Mozilla/5.0"
+10.0.0.2 - - [10/Oct/2023:13:55:37 +0000] "GET /api/users/2 HTTP/1.1" 200 1024 "-" "curl/8.1.2"
+10.0.0.3 - alice [10/Oct/2023:13:55:38 +0000] "POST /api/admin/reset HTTP/1.1" 204 0 "-" "Mozilla/5.0"
+10.0.0.4 - - [10/Oct/2023:14:02:01 +0200] "DELETE /api/sessions/abc123 HTTP/1.1" 401 12 "-" "python-requests/2.31"
+10.0.0.5 - - [10/Oct/2023:13:55:40 +0000] "GET /api/users/3?page=2&page=3&debug HTTP/1.1" 200 2326 "-" "Mozilla/5.0"

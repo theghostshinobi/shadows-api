@@ -1,0 +1,6 @@
+/target
+/macos/build
+
+# File di un'altra sessione di orchestrazione, non del prodotto: contengono
+# percorsi assoluti della macchina di sviluppo.
+/PILOT_*.md

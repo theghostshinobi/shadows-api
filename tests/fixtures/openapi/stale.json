@@ -1,0 +1,10 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Stale API", "version": "0.9.0" },
+  "servers": [{ "url": "https://api.example.com" }],
+  "paths": {
+    "/api/users/{userId}": {
+      "get": {}
+    }
+  }
+}

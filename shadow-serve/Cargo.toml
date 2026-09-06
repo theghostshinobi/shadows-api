@@ -1,0 +1,22 @@
+# `shadow-serve` — la SOLA cosa di questo progetto che apre un socket.
+#
+# Sta da sola apposta. §P6 dice che Shadow non apre connessioni non richieste, e
+# la decisione 36 del fondatore aveva scelto l'alert senza egress perche' la
+# frase «questo binario non apre socket» restasse verificabile dall'esterno.
+# Ora il fondatore ha chiesto anche il server: la frase cambia, e diventa
+# «l'unica rete di Shadow e' qui dentro, e si legge tutta in un file».
+#
+# Nessuna dipendenza di rete: il server e' scritto sulla libreria standard.
+# Su uno strumento di sicurezza, un framework HTTP e' una catena di fornitura in
+# piu' da difendere, e per servire una pagina non serve.
+[package]
+name = "shadow-serve"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[dependencies]
+shadow-view.workspace = true
+shadow-history.workspace = true

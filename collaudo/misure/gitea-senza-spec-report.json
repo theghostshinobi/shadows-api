@@ -1,0 +1,1717 @@
+{
+  "endpoints": [
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "84a04c248965d239",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/admin"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "54fa8df3b58b6868",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/alessandra"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "da467c257df0f407",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/swagger"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:22+00:00",
+      "id": "5d32a11332ac5c2c",
+      "last_seen": "2026-08-30T13:14:22+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 8,
+      "path_pattern": "/api/v1/admin/users"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "fd3f0117d3b87cc8",
+      "last_seen": "2026-08-30T13:14:57+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "e53751e8c4e7ea62",
+      "last_seen": "2026-08-30T13:14:57+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:36+00:00",
+      "id": "05f6f83e3fcb95bd",
+      "last_seen": "2026-08-30T13:14:36+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:38+00:00",
+      "id": "3a106e88141b931c",
+      "last_seen": "2026-08-30T13:14:38+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:37+00:00",
+      "id": "35f19960f196086c",
+      "last_seen": "2026-08-30T13:14:37+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:37+00:00",
+      "id": "6ea1b6a2e63b5fae",
+      "last_seen": "2026-08-30T13:14:37+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "710fff08a294345d",
+      "last_seen": "2026-08-30T13:15:03+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:36+00:00",
+      "id": "c9a47b83eb2ce2a8",
+      "last_seen": "2026-08-30T13:14:57+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "9cf7c7486e729dbb",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 37,
+      "path_pattern": "/api/v1/repos/collaudo/backend-api/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "424496c1f5a54353",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "8e5c2fc3319be35b",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:44+00:00",
+      "id": "f2aad210ea00aba6",
+      "last_seen": "2026-08-30T13:14:44+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:45+00:00",
+      "id": "e3c2906903b7d764",
+      "last_seen": "2026-08-30T13:14:45+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:44+00:00",
+      "id": "9d01573e25bb067c",
+      "last_seen": "2026-08-30T13:14:44+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:44+00:00",
+      "id": "b83ca9647c1aa3a7",
+      "last_seen": "2026-08-30T13:14:44+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "cc70e00d943f7011",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:43+00:00",
+      "id": "87323ac928d4d912",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "f8e96ba1698f5cc8",
+      "last_seen": "2026-08-30T13:15:02+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/api/v1/repos/collaudo/billing-service/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "4029bc2cae7101c8",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "4bb76d7f409bbacb",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:42+00:00",
+      "id": "62a8ecdee50ec1a3",
+      "last_seen": "2026-08-30T13:14:42+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:43+00:00",
+      "id": "d696b329e19c97d9",
+      "last_seen": "2026-08-30T13:14:43+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:42+00:00",
+      "id": "c54b543324284035",
+      "last_seen": "2026-08-30T13:14:42+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:42+00:00",
+      "id": "5af9e11412f4952b",
+      "last_seen": "2026-08-30T13:14:42+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "291f9448486adc29",
+      "last_seen": "2026-08-30T13:15:04+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:42+00:00",
+      "id": "207335d755e8e980",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "eb6b8d516083cbf3",
+      "last_seen": "2026-08-30T13:15:01+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/api/v1/repos/collaudo/docs-portal/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "4c56ba68eaadf309",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/frontend"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "e0d9e491ff6d5fb8",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:38+00:00",
+      "id": "67b3932ae019b686",
+      "last_seen": "2026-08-30T13:14:38+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:39+00:00",
+      "id": "7414ce01a8f1abcc",
+      "last_seen": "2026-08-30T13:14:39+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:38+00:00",
+      "id": "70f34b2989262071",
+      "last_seen": "2026-08-30T13:14:38+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:39+00:00",
+      "id": "c94b9815b8964c74",
+      "last_seen": "2026-08-30T13:14:39+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "b17b9f97a5d0959f",
+      "last_seen": "2026-08-30T13:15:03+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:38+00:00",
+      "id": "7bcdb794c61e684c",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "674d8bf38f52c3fa",
+      "last_seen": "2026-08-30T13:15:00+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/api/v1/repos/collaudo/frontend/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "44f6b30576caadbe",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/inesistente"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "89e22215988eab15",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "4c13c27865e5c6ee",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:40+00:00",
+      "id": "53c0e0532ef56b02",
+      "last_seen": "2026-08-30T13:14:40+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:41+00:00",
+      "id": "dda3da41f58476fc",
+      "last_seen": "2026-08-30T13:14:41+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:40+00:00",
+      "id": "69712c9bb568cdc7",
+      "last_seen": "2026-08-30T13:14:40+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:40+00:00",
+      "id": "299aefe3e17860d1",
+      "last_seen": "2026-08-30T13:14:40+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "acff1f9952e1cb29",
+      "last_seen": "2026-08-30T13:15:04+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:40+00:00",
+      "id": "088a35068c8c9288",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "ff086f95962e3e22",
+      "last_seen": "2026-08-30T13:15:01+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/api/v1/repos/collaudo/infra-tooling/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "cbb788d351372c9f",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "e86fbb27720ceddb",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/branches"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:46+00:00",
+      "id": "1d0146f781433eb3",
+      "last_seen": "2026-08-30T13:14:46+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/contents/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "5b509ac608c0b44b",
+      "last_seen": "2026-08-30T13:14:47+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/contents/config/app.yaml"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:46+00:00",
+      "id": "4af1bd5f1ec90ffc",
+      "last_seen": "2026-08-30T13:14:46+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/contents/docs/guida.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:46+00:00",
+      "id": "afc73b249e1fcf35",
+      "last_seen": "2026-08-30T13:14:46+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/contents/src/main.rs"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "0b4a3163c952bd95",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/git/commits/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:46+00:00",
+      "id": "3f7e3209f1558975",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "4ad6541fbc12c133",
+      "last_seen": "2026-08-30T13:15:02+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/api/v1/repos/collaudo/log-parser/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:22+00:00",
+      "id": "f663ffeafa4439d0",
+      "last_seen": "2026-08-30T13:14:34+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 6,
+      "path_pattern": "/api/v1/user/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "fd575a2c02c54afb",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/alessandra"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "052738e4adec0c1a",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/alessandra/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "b4299d45ffda9daf",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/bruno"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "1c65bc87e89f70a1",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/bruno/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "1f12dce8df4187e2",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/chiara"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "ec95c479fcb57ef8",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/chiara/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "24e4f70170d66340",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/davide"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "0dae052738f688b8",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/davide/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "d18bc6a3572daf6e",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/elisa"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "da6d48efa0772f76",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/elisa/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "c8482b6a0aefb538",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/fabio"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "b6d38cc589204b51",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/fabio/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "8bfa995aefadc335",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/giulia"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "9bfbac15da40d040",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/giulia/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "eab17ba0ce6ed8d6",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/luca"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "3d04a997f88d01e1",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/users/luca/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "dae01d30bd01f967",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/users/nessuno"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:16+00:00",
+      "id": "2c7379aa6a468f24",
+      "last_seen": "2026-08-30T13:14:16+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/version"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "47b1c9f39a4c943a",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/bruno"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "24ac3548b2c66da9",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/chiara"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "6f1c28722a60fca9",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/backend-api"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "4080c7d7c05bdba1",
+      "last_seen": "2026-08-30T13:15:03+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/backend-api/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "a918119eb9186cc9",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/backend-api/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "600655f778401c80",
+      "last_seen": "2026-08-30T13:15:00+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/backend-api/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "efb8f3b9667ecfee",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/backend-api/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "ddf9417b6bb1d14e",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/billing-service"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "a7b4cc5155a31929",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/billing-service/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "2e88fd61ef9163ac",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/billing-service/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "08a19ac48525f036",
+      "last_seen": "2026-08-30T13:15:02+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/billing-service/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "5dcbdaf622ba96b5",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/billing-service/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "48c7c575a7ea30ed",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/docs-portal"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "191de1016ba325f2",
+      "last_seen": "2026-08-30T13:15:04+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/docs-portal/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "667796d134ff1b93",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/docs-portal/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "1f940c95081aca06",
+      "last_seen": "2026-08-30T13:15:01+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/docs-portal/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "0185f567bfe88994",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/docs-portal/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:47+00:00",
+      "id": "dbaa4c0bef832417",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/frontend"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "7f49574118346cb2",
+      "last_seen": "2026-08-30T13:15:03+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/frontend/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "eac63bae3b13f31b",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/frontend/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "e04478a14a7967a8",
+      "last_seen": "2026-08-30T13:15:00+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/frontend/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "1d98745deb9e0ecb",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/frontend/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "e63f2d8c323340b2",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/infra-tooling"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:51+00:00",
+      "id": "eb2b1c6734f62d3d",
+      "last_seen": "2026-08-30T13:15:04+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/infra-tooling/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "5a4b23a9cb589d51",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/infra-tooling/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:49+00:00",
+      "id": "0c34c1e6ea9bf4f6",
+      "last_seen": "2026-08-30T13:15:01+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/infra-tooling/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "6a1d709ee011619e",
+      "last_seen": "2026-08-30T13:14:58+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/infra-tooling/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "9232bdded48e446c",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/log-parser"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "5ece2cc6ead1e4af",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 9,
+      "path_pattern": "/collaudo/log-parser/commit/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "34f45b6cc6557995",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/log-parser/issues"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:50+00:00",
+      "id": "222a81e6d03b7777",
+      "last_seen": "2026-08-30T13:15:02+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 36,
+      "path_pattern": "/collaudo/log-parser/issues/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:48+00:00",
+      "id": "58429aa24a645b64",
+      "last_seen": "2026-08-30T13:14:59+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/collaudo/log-parser/src/branch/main/README.md"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "896e0e7e3d52d852",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/davide"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "767fd77563af47b0",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/elisa"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "b4f4d04550f6c404",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/explore/repos"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "76a5d8e6c7fcc9c3",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/fabio"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "a646c8027493730b",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/giulia"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:14:52+00:00",
+      "id": "08111d6f3b8f014b",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/luca"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "21e2e4b93be83fc8",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/user/login"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:15:05+00:00",
+      "id": "9c86b1b8d3f6ab32",
+      "last_seen": "2026-08-30T13:15:05+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/user/settings"
+    }
+  ],
+  "findings": [],
+  "findings_silenced_by_allowlist": 0,
+  "manifest": {
+    "configuration": {
+      "allowlist_path": {
+        "source": "default",
+        "value": ""
+      },
+      "fail_on_undetermined": {
+        "source": "default",
+        "value": "false"
+      },
+      "log_format": {
+        "source": "default",
+        "value": "nginx-combined"
+      },
+      "openapi_spec": {
+        "source": "default",
+        "value": ""
+      },
+      "output_format": {
+        "source": "command-line",
+        "value": "json"
+      },
+      "redaction_enabled": {
+        "source": "default",
+        "value": "true"
+      },
+      "zombie_staleness_days": {
+        "source": "default",
+        "value": "30"
+      }
+    },
+    "counts": {
+      "discarded_by_reason": {},
+      "endpoints_found": 118,
+      "findings_by_classification": {},
+      "lines_discarded": 0,
+      "lines_parsed": 839,
+      "lines_total": 839
+    },
+    "inputs": [
+      {
+        "algorithm": "sha256",
+        "digest": "396c5dd2131b53c3aea0668b3855c17b0935bedf9ebccfa52adc550dd7226334",
+        "path": "<path>/access.log",
+        "role": "log"
+      }
+    ],
+    "ruleset_version": "0.3.0",
+    "run_timestamp": "2026-08-30T13:15:17.813690+00:00",
+    "shadow_version": "0.0.0"
+  },
+  "redaction_enabled": true,
+  "schema": "shadow-report/1"
+}

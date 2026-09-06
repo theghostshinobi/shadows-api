@@ -1,0 +1,34 @@
+
+######################################################################
+# /private/tmp/claude-501/-Users-ghostshinobi-Desktop-shadows/33545e55-6af7-4093-a464-a1de1b5b6a8d/scratchpad/collaudo/report-senza-spec.json
+# shadow 0.0.0, ruleset 0.3.0
+# inventario dichiarato: NO — solo euristiche
+
+=== 1. Rumore ===
+  endpoint osservati            118
+  silenziati dall'allowlist     0
+  finding non-Known ogni 10 endpoint  0.0
+
+=== 1b. Da quale motivo arriva il volume ===
+
+=== 2. Leggibilità sotto redazione ===
+  pattern con <redacted>        0/118  (0.0%)
+  evidenza con <redacted>       0/0  (n/d)
+  soglia proposta: oltre il 15% il Redactor è troppo aggressivo
+
+=== 3. Normalizzazione: candidati a forma di ID non riconosciuta ===
+  nessun prefisso con più di 20 figli letterali
+  ogni riga è un candidato: guarda il campione e chiediti se è un identificatore
+
+=== 4. Parsing ===
+  righe totali                  839
+  righe parsate                 839
+  righe scartate                0  (0.0%)
+  soglia proposta: oltre il 2% su un combined genuino la grammatica è troppo stretta
+
+=== 3b. Controprova: nessuna parola inghiottita dentro {id} ===
+  0 segmenti non-tipo-ID nel log, tutti presenti nel report
+
+Quello che questi numeri non dicono: se un finding sia utile.
+Serve il passo umano di COLLAUDO.md — trenta finding etichettati a mano,
+prima di guardare queste statistiche.

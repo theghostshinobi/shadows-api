@@ -1,0 +1,1751 @@
+{
+  "endpoints": [
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:25+00:00",
+      "id": "7e083f3ba54e2e9c",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 2,
+      "path_pattern": "/api/v1/info"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "4b646f89758dbdea",
+      "last_seen": "2026-08-30T13:20:40+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/login"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "8f24f739963fee65",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET",
+        "PUT"
+      ],
+      "observation_count": 8,
+      "path_pattern": "/api/v1/projects"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "17dd05c27c1d2565",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 16,
+      "path_pattern": "/api/v1/projects/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "907e5422f4773487",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/projects/{id}/projectusers"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "e635d99ea0290cc2",
+      "last_seen": "2026-08-30T13:20:40+00:00",
+      "methods": [
+        "PUT"
+      ],
+      "observation_count": 75,
+      "path_pattern": "/api/v1/projects/{id}/tasks"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "9a475411aa23f6ea",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 15,
+      "path_pattern": "/api/v1/projects/{id}/views"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:39+00:00",
+      "id": "b0babcb69264d401",
+      "last_seen": "2026-08-30T13:20:39+00:00",
+      "methods": [
+        "POST"
+      ],
+      "observation_count": 1,
+      "path_pattern": "/api/v1/register"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "41dce30839eb8fd7",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/tasks/all"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "803722024e7344dc",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 226,
+      "path_pattern": "/api/v1/tasks/{id}"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "365a82aceeeab955",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 225,
+      "path_pattern": "/api/v1/tasks/{id}/comments"
+    },
+    {
+      "auth": {
+        "observable_requests": 0,
+        "observed": "notobservable"
+      },
+      "first_seen": "2026-08-30T13:20:40+00:00",
+      "id": "47516d41eb1d6a6b",
+      "last_seen": "2026-08-30T13:20:41+00:00",
+      "methods": [
+        "GET"
+      ],
+      "observation_count": 3,
+      "path_pattern": "/api/v1/user"
+    }
+  ],
+  "findings": [
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/overview",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/projects",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/projects/{id}/owner",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/users",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/users/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/users/{id}/admin",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/admin/users/{id}/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/auth/openid/{provider}/callback",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/backgrounds/unsplash/image/{image}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/backgrounds/unsplash/image/{image}/thumb",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/backgrounds/unsplash/search",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/filters",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/filters/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/labels",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/labels/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/csv/detect",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/csv/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/csv/preview",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/csv/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/microsoft-todo/auth",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/microsoft-todo/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/microsoft-todo/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/ticktick/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/ticktick/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/todoist/auth",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/todoist/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/todoist/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/trello/auth",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/trello/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/trello/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/vikunja-file/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/vikunja-file/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/wekan/migrate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/migration/wekan/status",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/notifications",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/notifications/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/background",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/backgrounds/unsplash",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/backgrounds/upload",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/teams",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/users",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/views/{view}/buckets",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/views/{view}/tasks",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/webhooks",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{id}/webhooks/{webhookID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{projectID}/duplicate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{projectID}/teams/{teamID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{projectID}/users/{userID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{projectID}/views/{view}/buckets/{bucketID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{project}/shares",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{project}/shares/{share}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{project}/tasks/by-index/{index}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{project}/views/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/projects/{project}/views/{view}/buckets/{bucket}/tasks",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/routes",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/shares/{share}/auth",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/subscriptions/{entity}/{entityID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "medium",
+      "endpoint_id": "41dce30839eb8fd7",
+      "evidence": [
+        "no exact match in the spec; the closest declared path is /api/v1/tasks/{id}, which has a variable segment where this endpoint has a fixed one",
+        "reported as undetermined on purpose: calling it known would hide an endpoint the spec does not describe"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/all",
+      "severity": "medium"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/bulk",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{id}/attachments",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{id}/attachments/{attachmentID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{id}/position",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{projecttask}/read",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/assignees",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/assignees/bulk",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/assignees/{userID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/comments/{commentID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/duplicate",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/labels/bulk",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/relations",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{taskID}/relations/{relationKind}/{otherTaskID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{task}/labels",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tasks/{task}/labels/{label}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/teams",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/teams/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/teams/{id}/members",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/teams/{id}/members/{userID}/admin",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/teams/{id}/members/{username}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/test/all",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/test/{table}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tokens",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/tokens/{tokenID}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/confirm",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/deletion/cancel",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/deletion/confirm",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/deletion/request",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/export",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/export/download",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/export/request",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/logout",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/password",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/password/reset",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/password/token",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/avatar",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/avatar/upload",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/email",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/general",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/token/caldav",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/token/caldav/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/totp",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/totp/disable",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/totp/enable",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/totp/enroll",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/totp/qrcode",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/webhooks",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/webhooks/events",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/settings/webhooks/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/timezones",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/token",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/user/token/refresh",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/users",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/webhooks/events",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/{kind}/{id}/reactions",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/{kind}/{id}/reactions/delete",
+      "severity": "low"
+    },
+    {
+      "classification": "Undetermined",
+      "confidence": "low",
+      "endpoint_id": "-",
+      "evidence": [
+        "declared in the spec but never observed in this log",
+        "the analysed traffic covers 0 day(s), less than the staleness window of 30 day(s): too short to call it a zombie"
+      ],
+      "is_ambiguous": true,
+      "path_pattern": "/api/v1/{username}/avatar",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "7e083f3ba54e2e9c",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/info"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/info",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "4b646f89758dbdea",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/login"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/login",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "8f24f739963fee65",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/projects"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/projects",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "17dd05c27c1d2565",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/projects/{id}"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/projects/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "907e5422f4773487",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/projects/{id}/projectusers"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/projects/{id}/projectusers",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "e635d99ea0290cc2",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/projects/{id}/tasks"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/projects/{id}/tasks",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "9a475411aa23f6ea",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/projects/{project}/views"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/projects/{id}/views",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "b0babcb69264d401",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/register"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/register",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "803722024e7344dc",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/tasks/{id}"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/tasks/{id}",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "365a82aceeeab955",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/tasks/{taskID}/comments"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/tasks/{id}/comments",
+      "severity": "low"
+    },
+    {
+      "classification": "Known",
+      "confidence": "high",
+      "endpoint_id": "47516d41eb1d6a6b",
+      "evidence": [
+        "path and methods both declared in the spec as /api/v1/user"
+      ],
+      "is_ambiguous": false,
+      "path_pattern": "/api/v1/user",
+      "severity": "low"
+    }
+  ],
+  "findings_silenced_by_allowlist": 0,
+  "manifest": {
+    "configuration": {
+      "allowlist_path": {
+        "source": "default",
+        "value": ""
+      },
+      "fail_on_undetermined": {
+        "source": "default",
+        "value": "false"
+      },
+      "log_format": {
+        "source": "default",
+        "value": "nginx-combined"
+      },
+      "openapi_spec": {
+        "source": "command-line",
+        "value": "<path>/vikunja-openapi.json"
+      },
+      "output_format": {
+        "source": "command-line",
+        "value": "json"
+      },
+      "redaction_enabled": {
+        "source": "default",
+        "value": "true"
+      },
+      "zombie_staleness_days": {
+        "source": "default",
+        "value": "30"
+      }
+    },
+    "counts": {
+      "discarded_by_reason": {},
+      "endpoints_found": 12,
+      "findings_by_classification": {
+        "Known": 11,
+        "Undetermined": 116
+      },
+      "lines_discarded": 0,
+      "lines_parsed": 590,
+      "lines_total": 590
+    },
+    "inputs": [
+      {
+        "algorithm": "sha256",
+        "digest": "af95bcfd4c1bc22a488e7ed9da0697746223be4770efa4efbe3f00eb17cce91b",
+        "path": "<path>/vikunja.log",
+        "role": "log"
+      },
+      {
+        "algorithm": "sha256",
+        "digest": "cb69c149e51d7f9112d91ee959fb7f806bccc05478da3459048eb05ad1ec2ba9",
+        "path": "<path>/vikunja-openapi.json",
+        "role": "openapispec"
+      }
+    ],
+    "ruleset_version": "0.3.0",
+    "run_timestamp": "2026-08-30T13:20:49.164611+00:00",
+    "shadow_version": "0.0.0"
+  },
+  "redaction_enabled": true,
+  "schema": "shadow-report/1"
+}

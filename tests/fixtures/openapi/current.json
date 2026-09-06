@@ -1,0 +1,18 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Example API", "version": "1.0.0" },
+  "servers": [{ "url": "https://api.example.com" }],
+  "security": [{ "bearerAuth": [] }],
+  "paths": {
+    "/api/users/{userId}": {
+      "get": {},
+      "post": {}
+    },
+    "/api/sessions/{sessionId}": {
+      "delete": {}
+    },
+    "/api/reports/{reportId}": {
+      "get": {}
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[package]
+name = "shadow-collectors"
+description = "Collector: traducono formati di log specifici in `ObservedRequest` di shadow-core."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[dependencies]
+shadow-core.workspace = true
+# Il timestamp di ogni riga va portato a UTC: serve il parsing, non l'orologio.
+chrono.workspace = true
+# Digest degli input, calcolato nella stessa passata della lettura (§P10).
+sha2.workspace = true
+
+[dev-dependencies]
+sha2.workspace = true

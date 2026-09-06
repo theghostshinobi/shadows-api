@@ -1,0 +1,19 @@
+# `shadow-view` — dallo storico alla vista (§8, Fase 5).
+#
+# Crate non previsto da §8. Esiste perche' le quattro forme di supervisione
+# — terminale, pagina statica, server, applicazione macOS — devono guardare
+# **la stessa cosa**: se ognuna calcolasse la propria, prima o poi direbbero
+# numeri diversi sullo stesso storico. Qui c'e' il modello della vista e le sue
+# rappresentazioni; **zero rete** (quella e' `shadow-serve`, e sta da sola
+# apposta).
+[package]
+name = "shadow-view"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[dependencies]
+shadow-history.workspace = true
+serde_json.workspace = true

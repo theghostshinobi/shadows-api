@@ -1,0 +1,8 @@
+shadow-allowlist 1
+
+# Rivisto da: il team di piattaforma, 2026-08-30.
+# Endpoint amministrativo interno, non esposto all'esterno: verificato.
+endpoint 7d9cfd7f1c092667
+
+# Questa regola e' deliberatamente troppo ampia: serve a far scattare l'avviso.
+pattern /api/*

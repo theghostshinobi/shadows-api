@@ -1,0 +1,18 @@
+# `shadow-compliance` — il report d'audit (§8, §9 Fase 5).
+#
+# Si chiamava `shadow-report` in §8 fino al 2026-09-05, quando il fondatore ha
+# sciolto la collisione con l'identificatore dello schema JSON `shadow-report/1`
+# di §7 (decisione 35): lo schema e' un contratto pubblico congelato, il nome del
+# crate era interno e non aveva consumatori.
+[package]
+name = "shadow-compliance"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[dependencies]
+shadow-core.workspace = true
+shadow-history.workspace = true
+serde_json.workspace = true

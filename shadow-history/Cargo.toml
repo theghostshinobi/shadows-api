@@ -1,0 +1,25 @@
+# `shadow-history` — lo storico persistente (§9, Fase 5).
+#
+# Crate non previsto da §8, che elencava solo `shadow-daemon` e `shadow-report`.
+# Esiste perché lo storico non appartiene a nessuno dei due: `shadow-cli` lo
+# scrive a ogni run e `shadow-daemon` lo scriverà in continuo, quindi metterlo
+# nel demone farebbe dipendere la CLI dal demone. Emendamento a §8, segnalato in
+# PROGRESS.md.
+[package]
+name = "shadow-history"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[dependencies]
+shadow-core.workspace = true
+chrono = { workspace = true }
+# `bundled`: SQLite viene compilato dal sorgente incluso nel crate. Nessuna
+# libreria di sistema da trovare, e soprattutto nessun accesso di rete — né in
+# compilazione né a runtime (§P6).
+rusqlite = { version = "0.33", features = ["bundled"] }
+
+[dev-dependencies]
+rusqlite = { version = "0.33", features = ["bundled"] }

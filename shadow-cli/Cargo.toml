@@ -1,0 +1,39 @@
+[package]
+name = "shadow-cli"
+description = "Entrypoint e orchestratore di Shadow."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+# Il binario si chiama `shadow`: è il nome con cui l'utente invoca il tool
+# (§3: "Shadow" resta nome di lavoro finché il conflitto di naming non è risolto).
+[[bin]]
+name = "shadow"
+path = "src/main.rs"
+
+[dependencies]
+# Verso delle dipendenze fissato da §8: la CLI conosce core e collectors,
+# nessuno dei due conosce la CLI.
+shadow-core.workspace = true
+shadow-collectors.workspace = true
+shadow-spec.workspace = true
+shadow-history.workspace = true
+shadow-compliance.workspace = true
+shadow-daemon.workspace = true
+shadow-view.workspace = true
+shadow-serve.workspace = true
+# Il report JSON e' costruito a mano: §3 lascia aperto il formato esatto, e
+# legare lo schema pubblico alla forma interna dei record renderebbe una
+# rifattorizzazione un cambio di contratto verso l'esterno.
+serde_json.workspace = true
+clap.workspace = true
+# "clock": la CLI e' l'unico punto che legge l'orologio di sistema, per il
+# timestamp del `RunManifest` (§6). Il core non lo fa (vedi Cargo.toml radice).
+chrono = { workspace = true, features = ["clock"] }
+
+[dev-dependencies]
+# I test del cancello leggono il report JSON per verificarlo come lo
+# verificherebbe uno strumento a valle.
+serde_json.workspace = true
