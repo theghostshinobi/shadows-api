@@ -1,6 +1,6 @@
 
 ######################################################################
-# /private/tmp/claude-501/-Users-ghostshinobi-Desktop-shadows/33545e55-6af7-4093-a464-a1de1b5b6a8d/scratchpad/collaudo/report-senza-spec.json
+# <path>/report-senza-spec.json
 # shadow 0.0.0, ruleset 0.3.0
 # inventario dichiarato: NO — solo euristiche
 

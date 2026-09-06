@@ -1,4 +1,4 @@
-Te lo do qui in chat come preferisci per le cose destinate a Claude Code. Una premessa onesta, visto che me l'hai chiesto esplicitamente: ci ho messo dentro anche cose che nella nostra conversazione non erano emerse ma che per un blueprint serio sono fondamentali (strategia di test, determinismo, contratto stdout/stderr, riproducibilità del report, no-telemetria, budget di memoria). Sono segnate come tali dove serve.
+Te lo do qui in chat come preferisci. Una premessa onesta, visto che me l'hai chiesto esplicitamente: ci ho messo dentro anche cose che nella nostra conversazione non erano emerse ma che per un blueprint serio sono fondamentali (strategia di test, determinismo, contratto stdout/stderr, riproducibilità del report, no-telemetria, budget di memoria). Sono segnate come tali dove serve.
 
 Il documento è pensato con due ossessioni in testa: (1) l'agente non deve mai costruire pezzi scollegati — per questo ogni fase ha un **cancello di cablaggio** con una prova concreta; (2) l'agente non deve perdersi — per questo c'è un vocabolario canonico e un meccanismo di stato da tenere aggiornato.
 
@@ -6,7 +6,7 @@ Il documento è pensato con due ossessioni in testa: (1) l'agente non deve mai c
 
 # SHADOW — Blueprint di progetto (v1.12)
 
-## 0. Come Claude Code deve usare questo documento
+## 0. Come usare questo documento
 
 Leggi **tutto** questo blueprint prima di scrivere una sola riga. Poi:
 
@@ -430,11 +430,11 @@ Non discusso prima esplicitamente, ma è il **solo** meccanismo che cattura i fa
 
 ## 12. Note del fondatore (a parole tue)
 
-*Spazio lasciato apposta.* Se vuoi aggiungere a Claude Code istruzioni tue in linguaggio libero — priorità, vincoli personali, cosa ti sta più a cuore che venga fatto bene per primo — scrivile qui prima di consegnargli il documento.
+*Spazio lasciato apposta.* Se vuoi aggiungere istruzioni tue in linguaggio libero — priorità, vincoli personali, cosa ti sta più a cuore che venga fatto bene per primo — scrivile qui prima di consegnargli il documento.
 
 ---
 
-Due cose restano appese e le decidi tu, non l'agente: il **conflitto sul nome "Shadow"** e i **parametri esatti della licenza BSL**. Sono in §3 apposta, così l'agente non le inventa. Se vuoi, ti dettaglio a fondo una singola fase (tipo la Fase 2, la normalizzazione, che è quella tecnicamente più insidiosa) prima di darlo in pasto a Claude Code.
+Due cose restano appese e le decidi tu, non l'agente: il **conflitto sul nome "Shadow"** e i **parametri esatti della licenza BSL**. Sono in §3 apposta, così l'agente non le inventa. Se vuoi, ti dettaglio a fondo una singola fase (tipo la Fase 2, la normalizzazione, che è quella tecnicamente più insidiosa) prima di cominciare.
 ---
 
 ## 13. Registro delle revisioni
