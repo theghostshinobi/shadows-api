@@ -1,0 +1,34 @@
+Shadow — API discovery, offline.
+
+WHAT IS IN HERE
+  Shadow.app   the menu bar app: drag it onto Applications
+  shadow       the command line tool: copy it wherever you keep binaries,
+               for example  sudo cp shadow /usr/local/bin/
+
+THIS BUILD IS NOT SIGNED OR NOTARIZED
+  macOS will refuse to open it on first launch, because it was downloaded
+  from the internet and Apple has not been asked to vouch for it.
+
+  To open it anyway, once:
+      right-click Shadow.app  ->  Open  ->  Open
+
+  Or, from a terminal:
+      xattr -dr com.apple.quarantine /Applications/Shadow.app
+      xattr -d  com.apple.quarantine /usr/local/bin/shadow
+
+  Do this only because you decided to trust this build. It is exactly the
+  step you should be suspicious about when any other tool asks you for it.
+
+BEFORE THE APP SHOWS ANYTHING
+  It reads a small settings file. It writes an example one for you the
+  first time you launch it:
+      ~/Library/Application Support/Shadow/menubar.json
+
+  Fill in the path to the shadow binary, the history file and the target.
+
+  Then, to have a history to look at:
+      shadow daemon /var/log/nginx/access.log \
+             --openapi-spec openapi.json \
+             --history ~/shadow/history.db --target my-api
+
+Shadow is a discovery aid, not a security certification.

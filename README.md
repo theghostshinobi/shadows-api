@@ -19,6 +19,16 @@ endpoint inventory` · `Rust` · `CLI`
 
 </div>
 
+<div align="center">
+
+### Download
+
+[**↓ macOS — Shadow.dmg**](https://github.com/theghostshinobi/shadows-api/releases/latest/download/Shadow-macos-arm64.dmg) · [**↓ Linux x86_64**](https://github.com/theghostshinobi/shadows-api/releases/latest/download/shadow-linux-x86_64.tar.gz) · [**↓ Linux ARM64**](https://github.com/theghostshinobi/shadows-api/releases/latest/download/shadow-linux-aarch64.tar.gz)
+
+[all releases and checksums](https://github.com/theghostshinobi/shadows-api/releases)
+
+</div>
+
 ---
 
 ## Who this is for
@@ -129,13 +139,71 @@ shadow compliance --history shadow.db --format csv > inventory.csv
 
 There is a step-by-step walkthrough in **[docs/TUTORIAL.md](docs/TUTORIAL.md)**.
 
-## Building
+## How it works on each system
 
-Rust 1.85 or newer, and nothing else. No network access is needed at build time
-or at run time.
+The engine is the same everywhere: **one binary, `shadow`, with no runtime
+dependencies.** What differs is only how you look at it.
+
+### Linux — the server case
+
+This is what Shadow was built for: it sits on the machine that already has the
+logs, and never moves them.
+
+```bash
+tar -xzf shadow-linux-x86_64.tar.gz
+sudo install -m 755 shadow /usr/local/bin/
+
+# watch a log continuously, and keep a page up to date next to it
+shadow daemon /var/log/nginx/access.log \
+       --openapi-spec /etc/shadow/openapi.json \
+       --history /var/lib/shadow/history.db --target payments-api \
+       --interval 60 --dashboard /var/www/html/shadow.html
+```
+
+Two ways to look at it, and neither needs a desktop:
+
+- **terminal** — `shadow status`, `shadow alerts`, `shadow compliance`, over ssh;
+- **web page** — the daemon rewrites `shadow.html` after every cycle, and the
+  page re-reads itself. Serve it with whatever web server you already run, or
+  use `shadow serve` for a local read-only server on `127.0.0.1:8787`.
+
+There is no Linux GUI app, and there is no plan for one: on a server the
+terminal and a page are the two things that actually get used.
+
+It runs fine under `systemd`; a unit file is a dozen lines and the daemon needs
+no privileges beyond reading the log and writing its history.
+
+### macOS — the desktop case
+
+Everything the Linux side does, plus a menu bar app.
+
+```bash
+# from the DMG: drag Shadow.app onto Applications, and copy the binary
+sudo cp /Volumes/Shadow/shadow /usr/local/bin/
+```
+
+Then tell the app where to look, in
+`~/Library/Application Support/Shadow/menubar.json` — it writes an example one
+for you the first time you launch it.
+
+> **The macOS build is not signed or notarised.** macOS refuses downloaded
+> unsigned apps on first launch. Right-click `Shadow.app` → **Open** → **Open**,
+> or `xattr -dr com.apple.quarantine /Applications/Shadow.app`.
+>
+> This is a real gap, not a formality: signing needs an Apple Developer account,
+> which belongs to a person and not to a repository. Until there is one, you are
+> being asked to trust a build you cannot verify through Apple — which is
+> exactly the kind of request you should be suspicious about, including here.
+> Every archive ships with its SHA-256, and you can always build from source.
+
+### Building from source
+
+Rust 1.85 or newer, and nothing else. No network access at build time or at run
+time — SQLite is compiled from source that ships inside the dependency.
 
 ```bash
 cargo build --release          # -> target/release/shadow
+cargo test --workspace         # 241 checks
 sh macos/build.sh              # -> macos/build/Shadow.app  (macOS only)
 ```
 

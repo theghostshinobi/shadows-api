@@ -1,0 +1,98 @@
+# Builds the downloadable artefacts when a version tag is pushed.
+#
+# Two things are deliberately absent, and their absence is the honest state of
+# this project rather than an oversight:
+#
+#   - the macOS app is NOT signed or notarised. Doing that needs an Apple
+#     Developer account, which belongs to a person and not to a repository.
+#     Until it exists, macOS will refuse a downloaded build on first launch and
+#     the DMG explains how to open it anyway.
+#   - nothing is published to a package registry. The project name is still
+#     provisional, and taking a name on a public registry is a decision, not a
+#     build step.
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: ${{ matrix.label }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            label: linux-x86_64
+          - os: ubuntu-24.04-arm
+            label: linux-aarch64
+          - os: macos-14
+            label: macos-arm64
+          - os: macos-13
+            label: macos-x86_64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: cargo build --release --locked
+
+      - name: Check it runs
+        run: ./target/release/shadow --version
+
+      # Le verifiche girano su ogni piattaforma: un binario che passa i test
+      # solo sulla macchina di chi lo ha scritto non e' un binario verificato.
+      - name: Run the checks
+        run: cargo test --workspace --locked
+
+      - name: Package the binary
+        shell: bash
+        run: |
+          mkdir -p dist
+          tar -czf "dist/shadow-${{ matrix.label }}.tar.gz" -C target/release shadow
+          cd dist && shasum -a 256 "shadow-${{ matrix.label }}.tar.gz" > "shadow-${{ matrix.label }}.tar.gz.sha256"
+
+      - name: Build the macOS app and DMG
+        if: matrix.label == 'macos-arm64'
+        shell: bash
+        run: |
+          sh macos/build.sh
+          mkdir -p stage
+          cp -R macos/build/Shadow.app stage/
+          cp target/release/shadow stage/shadow
+          cp macos/READ-ME-FIRST.txt stage/
+          ln -s /Applications stage/Applications
+          hdiutil create -volname Shadow -srcfolder stage -ov -format UDZO "dist/Shadow-macos-arm64.dmg"
+          cd dist && shasum -a 256 Shadow-macos-arm64.dmg > Shadow-macos-arm64.dmg.sha256
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.label }}
+          path: dist/*
+
+  release:
+    needs: build
+    runs-on: ubuntu-24.04
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
+          body: |
+            **Shadow is a discovery aid, not a security certification.**
+
+            The macOS build is not signed or notarised: macOS will refuse it on
+            first launch. `READ-ME-FIRST.txt` inside the DMG says how to open it
+            anyway, and why you should be suspicious of that step in general.
+
+            Every archive comes with its SHA-256 next to it.
