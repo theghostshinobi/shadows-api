@@ -1746,7 +1746,7 @@ fn il_server_dice_dove_ascolta_ed_e_in_sola_lettura() {
     let db = storico("serve");
     run(&[log.to_str().unwrap(), "--history", db.to_str().unwrap()]);
 
-    let mut child = Command::new(env!("CARGO_BIN_EXE_shadow"))
+    let child = Command::new(env!("CARGO_BIN_EXE_shadow"))
         .args([
             "serve",
             "--history",

@@ -171,8 +171,12 @@ final class Model: ObservableObject {
     func start() {
         refresh()
         let seconds = Double(Settings.load()?.refreshSeconds ?? 30)
+        // `self` si lega a una costante **prima** del `Task`: catturarlo dentro
+        // un contesto concorrente è un errore su alcune versioni del
+        // compilatore e un'ambiguità su tutte le altre.
         timer = Timer.scheduledTimer(withTimeInterval: max(seconds, 5), repeats: true) { [weak self] _ in
-            Task { @MainActor in self?.refresh() }
+            guard let model = self else { return }
+            Task { @MainActor in model.refresh() }
         }
     }
 
@@ -535,10 +539,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     /// barra dei menu che mostra sempre un numero smette di essere guardata.
     private func observeAlerts() {
         Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
+            guard let delegate = self else { return }
             Task { @MainActor in
-                guard let self else { return }
-                let open = self.model.openAlerts
-                self.statusItem.button?.title = open > 0 ? " \(open)" : ""
+                let open = delegate.model.openAlerts
+                delegate.statusItem.button?.title = open > 0 ? " \(open)" : ""
             }
         }
     }
